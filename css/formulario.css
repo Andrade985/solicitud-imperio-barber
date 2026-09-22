@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  padding: 30px 20px;
+}
+
+.container {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 650px;
+}
+
+.container h2 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.subtitulo {
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.form-group {
+  flex: 1 1 calc(50% - 15px);
+  min-width: 250px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-group.full-width {
+  flex: 1 1 100%;
+}
+
+.button-container {
+  text-align: center;
+  flex: 1 1 100%;
+  margin-top: 10px;
+}
+
+button {
+  background: linear-gradient(130deg, #1c1c1c, #b08d57);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(130deg, #b08d57, #1c1c1c);
+}
+
+.lista-titulo {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+}
+
+.lista-solicitudes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.solicitud-card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px 15px;
+  background: #fafafa;
+  font-size: 14px;
+}
+
+.solicitud-card strong {
+  color: #1c1c1c;
+}
+
+.sin-solicitudes {
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}
